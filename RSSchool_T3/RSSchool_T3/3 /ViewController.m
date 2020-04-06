@@ -121,6 +121,7 @@ int PADDING = 30;
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
     [label setText:@"Color"];
+    [colorSample setBackgroundColor:UIColor.clearColor];
 }
 
 - (void) submit:(id) input {
