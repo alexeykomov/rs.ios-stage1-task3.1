@@ -71,7 +71,7 @@ int PADDING = 30;
     process.center = CGPointMake([self view].center.x, 350);
     [process setTitle:@"Process" forState:UIControlStateNormal];
     process.accessibilityIdentifier = @"buttonProcess";
-    [process setTitleColor:UIColor.systemBlueColor forState:UIControlStateNormal];
+    [process setTitleColor: [UIColor colorWithRed:0.29 green:0.53 blue:0.97 alpha:1] forState:UIControlStateNormal];
     [[self view] addSubview:process];
     
     [process addTarget:self action:@selector(submit:) forControlEvents:UIControlEventTouchDown];
