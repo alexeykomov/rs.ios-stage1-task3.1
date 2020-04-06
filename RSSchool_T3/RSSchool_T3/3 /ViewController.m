@@ -66,8 +66,9 @@ int PADDING = 30;
     [self createColorValueRow:1];
     [self createColorValueRow:2];
     
-    CGRect buttonRect = CGRectMake((width - 100) / 2, 350, 100, 25);
+    CGRect buttonRect = CGRectMake(0, 0, 100, 25);
     UIButton *process = [[UIButton alloc] initWithFrame:buttonRect];
+    process.center = CGPointMake([self view].center.x, 350);
     [process setTitle:@"Process" forState:UIControlStateNormal];
     process.accessibilityIdentifier = @"buttonProcess";
     [process setTitleColor:UIColor.systemBlueColor forState:UIControlStateNormal];
