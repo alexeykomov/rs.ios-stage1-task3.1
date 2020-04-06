@@ -6,6 +6,8 @@
 {
     NSMutableArray<UIView *> *colorValueRows;
     NSMutableArray<NSString *> *colorLabels;
+    NSMutableArray<NSString *> *colorLabelIds;
+    NSMutableArray<NSString *> *textFieldIds;
     UILabel *label;
     UIView *colorSample;
 }
